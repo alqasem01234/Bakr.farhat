@@ -1,0 +1,140 @@
+/*
+ * ملف CSS الخاص بالموقع الشخصي التعريفي.
+ * يحدد هذا الملف أنماط الألوان والخطوط وتوزيع العناصر على الصفحة.
+ */
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* العنصر العلوي الذي يحوي صورة الخلفية والنص */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    color: #fff;
+    /* استخدام تدرج لوني بدل صورة خارجية */
+    background-image: linear-gradient(135deg, #3F51B5 0%, #673AB7 50%, #E91E63 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* طبقة شفافة فوق التدرج لتحسين تباين النص */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* شريط التنقل */
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* في الوضع من اليمين لليسار، flex-start يعني بداية من اليمين */
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navigation li a {
+    color: #fff;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.navigation li a:hover {
+    opacity: 0.8;
+}
+
+/* محتوى الهيرو (النصوص) */
+.hero-content {
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* الأقسام */
+.section {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: right;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+/* قائمة المهارات */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #e8eaf6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
