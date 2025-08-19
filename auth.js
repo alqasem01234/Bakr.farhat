@@ -1,12 +1,12 @@
 // تهيئة فيربيز: استبدل القيم داخل firebaseConfig بالقيم الفعلية من إعدادات مشروع Firebase الخاص بك
 const firebaseConfig = {
   apiKey: "AIzaSyDATuWFL00x7sGpzfNAlygtE1bYQ8OOChk",
-    authDomain: "bakrfarhatsite.firebaseapp.com",
-    projectId: "bakrfarhatsite",
-    storageBucket: "bakrfarhatsite.firebasestorage.app",
-    messagingSenderId: "977535530510",
-    appId: "1:977535530510:web:89e187e4f12b7ec7f2ee5f",
-    measurementId: "G-75QP5W9V96",
+  authDomain: "bakrfarhatsite.firebaseapp.com",
+  projectId: "bakrfarhatsite",
+  storageBucket: "bakrfarhatsite.firebasestorage.app",
+  messagingSenderId: "977535530510",
+  appId: "1:977535530510:web:89e187e4f12b7ec7f2ee5f",
+  measurementId: "G-75QP5W9V96"
   // يمكن إضافة باقي القيم مثل storageBucket و messagingSenderId إذا احتجتها لاحقًا
 };
 
